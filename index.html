@@ -92,6 +92,8 @@ html {
 }
 #frame{-webkit-transform: scale(0.6); transform: scale(0.6);
 height:700px; width:1200px; left:-70px; top:-30px;}
+
+@supports not (-webkit-touch-callout: none) {
 @media screen and (max-width: 1000px) and (orientation: portrait){
 #everything { position: absolute; zoom: 140%;
 	left:680px;
@@ -103,7 +105,22 @@ height:700px; width:1200px; left:-70px; top:-30px;}
     transform: rotate(90deg); }
 #frame { -webkit-transform: scale(0.88); transform: scale(0.88);
 height:500px; width:790px; left:125px; top:60px;}
-}
+}}
+@supports (-webkit-touch-callout: none) {
+@media screen and (max-width: 1000px) and (orientation: portrait){
+#everything { position: absolute; zoom: 140%;
+	left:680px;
+	top:-40px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+#frame { -webkit-transform: scale(0.88); transform: scale(0.88);
+height:500px; width:790px; left:125px; top:60px;}
+html{-webkit-text-size-adjust: 145%; text-size-adjust: 145%;}
+}}
+
 @media screen and (min-width: 1700px) and (orientation: landscape){
 #everything { position: absolute; zoom: 130%;
 	left:80px;
