@@ -176,7 +176,7 @@ color: #d4b8be;
 html { text-size-adjust: 100%; }
 
 /* ・゜ ♡  these ⤵ are specifications for mobile phones in vertical view   ♡ ゜ ・ */
-@media screen and (max-width: 1000px) and (orientation: portrait){
+@media screen and (min-width: 1px) and (orientation: portrait){
 #everything { position: absolute; /* let's make sure that everything is fixed on the screen ◝꒰ ´ ˘ ` */
 	zoom: 160%; /* this viewport makes your site smaller, so let's apply zoom ◝꒰ ´ ˘ ` */
 	left:650px; top:-60px; /* change these values for positioning your site properly on the screen ◝꒰ ´ ˘ ` */
@@ -196,14 +196,14 @@ html { text-size-adjust: 100%; }
 /* ・゜ ♡  these ⤵ are specifications for ipad screens   ♡ ゜ ・ */
 @media screen and (min-width: 2000px) and (orientation: landscape){
 #everything { position: absolute;
-zoom: 100%; /* this viewport usually doesn't require zoom ◝꒰ ´ ˘ ` */
+zoom: 170%; /* this viewport makes your site smaller, so let's apply zoom ◝꒰ ´ ˘ ` */
 }}
 
 
 /* ・゜ ♡  these ⤵ are specifications for 1920 x 1080 monitors   ♡ ゜ ・ */
 @media screen and (min-width: 1700px) and (orientation: landscape){
 #everything { position: absolute;
-	zoom: 130%; /* this viewport makes your site smaller, so let's apply zoom ◝꒰ ´ ˘ ` */
+	zoom: 130%; /* this viewport also makes your site smaller, so let's apply zoom ◝꒰ ´ ˘ ` */
 	left:60px; top:40px; 
 }}
 
